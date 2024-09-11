@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mirando</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Left Sidebar Rectangle -->
+  <aside class="left-sidebar">
+    <div class="logo-container">
+      <img src="C:/Users/medhat6969/Downloads/logo-removebg-preview.png" alt="Mirando Logo" class="logo" />
+    </div>
+    <nav class="side-buttons">
+      <!-- Icon for Topic -->
+      <button id="panel-button1" class="panel-button">
+        <i class="fas fa-book"></i>
+      </button>
+  
+      <!-- Icon for Summary -->
+      <button id="panel-button2" class="panel-button">
+        <i class="fas fa-list-alt"></i>
+      </button>
+  
+      <!-- Icon for Keywords -->
+      <button id="panel-button3" class="panel-button">
+        <i class="fas fa-key"></i>
+      </button>
+    </nav>
+  </aside>
+  
+
+  <!-- App Bar with Search -->
+  <header class="app-bar">
+    <div class="app-title">
+      <h1>Mirando</h1>
+    </div>
+    <div class="search-container">
+      <input type="text" id="searchQuery" placeholder="Search course & class" />
+      <button id="submitButton">Submit</button>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    <div id="videoContainer">
+      <video id="videoPlayer" controls>
+        <source id="videoSource" src="" type="video/mp4" />
+        <track id="subtitleTrack" kind="subtitles" src="" label="English" srclang="en" default>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div id="card-container">
+      <!-- Card Example -->
+      <div class="card">
+        <h3>please select what do you want</h3>
+        
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+/* Basic styles for the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #292A32; /* Dark background */
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  height: 10vh;
+  display: flex;
+  overflow-y: auto;
+  position: relative; /* Necessary to position the background layers */
+}
+
+/* Two-layer Background Effect */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1C1C24; /* Gradient background */
+  z-index: -1;
+}
+
+
+
+/* Left Sidebar (Rectangle) */
+.left-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100vh;
+  background-color: #292A32; /* Dark gray */
+  box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+  z-index: 1;
+}
+
+.logo-container {
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.side-buttons {
+  margin-top: 8px;
+}
+
+.panel-button {
+  width: 50px;
+  height: 50px;
+  margin: 0px 0;
+  background-color: #292932;
+  color: #92929D;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel-button i {
+  font-size: 1.8rem; /* Larger icon size */
+}
+
+.panel-button:hover {
+  background-color: #373747;
+}
+
+/* App Bar (Top Bar) */
+.app-bar {
+  position: fixed;
+  top: 0;
+  left: 50px; /* Align next to sidebar */
+  width: calc(100% - 50px);
+  height: 15px;
+  background-color: #292A32; /* Dark blue/purple */
+  padding: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  z-index: 2;
+  box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* App Title */
+.app-title {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 200px; /* Add space between the title and the search bar */
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px; /* Center the search bar */
+}
+
+.search-container input {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  border-radius: 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333;
+  color: #92929D;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #373747;
+}
+
+/* Main Content Area */
+main {
+  margin-left:50px; /* Leave space for sidebar */
+  margin-top: 60px; /* Leave space for top bar */
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Video Player Container */
+#videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#videoPlayer {
+  width: 100%;
+  max-width: 85%; /* Increase max size for better view */
+  border-radius: 10px; /* Rounded edges like the image */
+  background-color: #2a2b3e;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); /* Heavier shadow for depth */
+}
+.video-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+
+/* Content Cards */
+#card-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background-color: #292932; /* Dark blue background for card */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: left;
+  font-size: 1rem;
+  color: #ffffff;
+  width: 100%;
+  max-width: 82%;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #bbbbbb;
+}

@@ -1,10 +1,10 @@
-# Mirando - Video Player Application
+# IPTV Video Player Application
 
 A sleek and modern video player web application designed for ease of use and flexibility.
 
 ## Overview
 
-Mirando allows users to search for courses or videos, play videos with subtitle support, and view additional content such as topics, summaries, and keywords related to the video. Built using a combination of HTML, CSS, JavaScript, and Python, this application offers a clean and responsive UI.
+PTV Video Player Application allows users to search for courses or videos, play videos with subtitle support, and view additional content such as topics, summaries, and keywords related to the video. Built using a combination of HTML, CSS, JavaScript, and Python, this application offers a clean and responsive UI.
 
 ## Features
 

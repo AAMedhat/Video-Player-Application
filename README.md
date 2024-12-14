@@ -13,8 +13,9 @@ PTV Video Player Application allows users to search for courses or videos, play 
 - **Search Functionality**: Allows users to search for courses or videos via an API call.
 - **Dynamic Content Loading**: Loads and displays video-related content (topics, summaries, keywords) dynamically through JSON and text files fetched from a server.
 - **Responsive Design**: Optimized for various screen sizes with a modern dark-themed interface.
-- **Figma**: Used for designing the mobile application UI.
--  ![image](https://github.com/user-attachments/assets/6ae932bd-31b2-4fed-8f74-65947df3c4f0)
+- **Figma**: Used for designing the UI.
+
+   ![image](https://github.com/user-attachments/assets/6ae932bd-31b2-4fed-8f74-65947df3c4f0)
 
 
 ## Files
